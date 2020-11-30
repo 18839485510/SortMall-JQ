@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!-- <link rel="stylesheet" href="libs/carousel/carousel.css"> -->
+</head>
+
+<body>
+    <!-- S 顶部导航 -->
+    <div class="top">
+        <div class="container">
+            <div class="user-info">
+                <div class="not-login">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                </div>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item cart-box">
+                    <a href="#">
+                        <i class="iconfont icon-cart"></i> 购物车 (<span class="cart-count"></span>)
+                    </a>
+                    <div class="cart-content">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">个人中心</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">我的订单</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- E 顶部导航 -->
+    <!-- S 头部搜索 -->
+    <div class="header">
+        <div class="container">
+            <a href="#">
+                <div class="logo col-1">
+                    <h1>SortMall</h1>
+                </div>
+            </a>
+            <div class="search-wrap col-gap">
+                <div class="search-box clearfix">
+                    <input type="text" class="search-input" placeholder="请输入商品名称进行搜索">
+                    <a href="javascript:;" class="search-btn">搜索</a>
+                    <ul class="search-layer">
+                        <!-- <li class="search-item">衣服</li> -->
+                    </ul>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="active">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">全部商品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">热卖商品</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- E 头部搜索 -->
+    <!-- S 焦点区域 -->
+    <div class="focus">
+        <div class="container clearfix">
+            <div class="categories col-1">
+                <div class="parent-categories">
+                    <!-- <ul>
+                        <li class="parent-categories-item">
+                            手机通讯
+                        </li>
+                        <li class="parent-categories-item">
+                            食品生鲜
+                        </li>
+                        <li class="parent-categories-item">
+                            汽车保养
+                        </li>
+                        <li class="parent-categories-item">
+                            内衣配饰
+                        </li>
+                        <li class="parent-categories-item">
+                            母婴童装
+                        </li>
+                        <li class="parent-categories-item">
+                            美妆护肤
+                        </li>
+                        <li class="parent-categories-item">
+                            酒水饮料
+                        </li>
+                        <li class="parent-categories-item">
+                            个护清洁
+                        </li>
+                        <li class="parent-categories-item">
+                            家用电器
+                        </li>
+                        <li class="parent-categories-item">
+                            电脑耗材
+                        </li>
+                    </ul> -->
+                </div>
+                <div class="child-categories">
+                </div>
+            </div>
+            <div class="swiper col-4 col-gap" id="swiper">
+                <!-- <ul class="img-wrap">
+                    <li class="img-item">
+                        <img src="images/swiper1.jpg" alt="">
+                    </li>
+                    <li class="img-item">
+                        <img src="images/swiper2.jpg" alt="">
+                    </li>
+                    <li class="img-item">
+                        <img src="images/swiper3.jpg" alt="">
+                    </li>
+                </ul>
+                <span class="arrow left-arrow">&lt;</span>
+                <span class="arrow right-arrow">&gt;</span>
+                <ul class="btn-wrap">
+                    <li class="btn-item"></li>
+                    <li class="btn-item"></li>
+                    <li class="btn-item active"></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+    <!-- E 焦点区域 -->
+    <!-- S 热销区域 -->
+    <div class="hot">
+        <div class="container clearfix">
+            <a href="#">
+                <div class="hot-card col-1">
+                    <h4>热销商品</h4>
+                    <i class="iconfont icon-cart"></i>
+                </div>
+            </a>
+            <div class="product-list col-4 col-gap">
+                <!-- <div class="product-item col-1 col-gap">
+                    <a href="#">
+                        <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                        <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                        </p>
+                        <div class="product-price-paynums">
+                            <span class="product-price">&yen;&nbsp;23123</span>
+                            <span class="product-paynums">99人已购买</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item col-1 col-gap">
+                    <a href="#">
+                        <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                        <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                        </p>
+                        <div class="product-price-paynums">
+                            <span class="product-price">&yen;&nbsp;23123</span>
+                            <span class="product-paynums">99人已购买</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item col-1 col-gap">
+                    <a href="#">
+                        <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                        <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                        </p>
+                        <div class="product-price-paynums">
+                            <span class="product-price">&yen;&nbsp;23123</span>
+                            <span class="product-paynums">99人已购买</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-item col-1 col-gap">
+                    <a href="#">
+                        <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                        <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                        </p>
+                        <div class="product-price-paynums">
+                            <span class="product-price">&yen;&nbsp;23123</span>
+                            <span class="product-paynums">99人已购买</span>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- E 热销区域 -->
+    <!-- S 楼层 -->
+    <div class="floor">
+        <div class="container">
+            <!-- <div class="floor-wrap clearfix">
+                <div class="floor-title">
+                    <a href="#">
+                        <h4>F1 电脑耗材</h4>
+                    </a>
+                </div>
+                <div class="product-list">
+                    <div class="product-item col-1 col-gap">
+                        <a href="#">
+                            <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                            <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                            </p>
+                            <div class="product-price-paynums">
+                                <span class="product-price">&yen;&nbsp;23123</span>
+                                <span class="product-paynums">99人已购买</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item col-1 col-gap">
+                        <a href="#">
+                            <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                            <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                            </p>
+                            <div class="product-price-paynums">
+                                <span class="product-price">&yen;&nbsp;23123</span>
+                                <span class="product-paynums">99人已购买</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item col-1 col-gap">
+                        <a href="#">
+                            <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                            <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                            </p>
+                            <div class="product-price-paynums">
+                                <span class="product-price">&yen;&nbsp;23123</span>
+                                <span class="product-paynums">99人已购买</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item col-1 col-gap">
+                        <a href="#">
+                            <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                            <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                            </p>
+                            <div class="product-price-paynums">
+                                <span class="product-price">&yen;&nbsp;23123</span>
+                                <span class="product-paynums">99人已购买</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item col-1 col-gap">
+                        <a href="#">
+                            <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                            <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                            </p>
+                            <div class="product-price-paynums">
+                                <span class="product-price">&yen;&nbsp;23123</span>
+                                <span class="product-paynums">99人已购买</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="floor-wrap clearfix">
+                <div class="floor-title">
+                    <a href="#">
+                        <h4>F2 家用电器</h4>
+                    </a>
+                </div>
+                <div class="product-list">
+                    <div class="product-item col-1 col-gap">
+                        <a href="#">
+                            <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                            <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                            </p>
+                            <div class="product-price-paynums">
+                                <span class="product-price">&yen;&nbsp;23123</span>
+                                <span class="product-paynums">99人已购买</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item col-1 col-gap">
+                        <a href="#">
+                            <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                            <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                            </p>
+                            <div class="product-price-paynums">
+                                <span class="product-price">&yen;&nbsp;23123</span>
+                                <span class="product-paynums">99人已购买</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item col-1 col-gap">
+                        <a href="#">
+                            <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                            <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                            </p>
+                            <div class="product-price-paynums">
+                                <span class="product-price">&yen;&nbsp;23123</span>
+                                <span class="product-paynums">99人已购买</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item col-1 col-gap">
+                        <a href="#">
+                            <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                            <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                            </p>
+                            <div class="product-price-paynums">
+                                <span class="product-price">&yen;&nbsp;23123</span>
+                                <span class="product-paynums">99人已购买</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item col-1 col-gap">
+                        <a href="#">
+                            <img src="https://api.mall.kuazhu.com/product-images/1595243964583.jpg" alt="">
+                            <p class="product-name">联想(Lenovo)小新Air14英寸 AMD锐龙版(全新12nm)轻薄笔记本电脑(R5-3500U 12G 512G PCIE IPS)轻奢灰
+                            </p>
+                            <div class="product-price-paynums">
+                                <span class="product-price">&yen;&nbsp;23123</span>
+                                <span class="product-paynums">99人已购买</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- E 楼层 -->
+    <!-- S 底部 -->
+    <div class="footer">
+        <div class="container">
+            <div class="promise">
+                <span class="promise-item1">7天无理由退换货</span>
+                <span class="promise-item2">满99元全场免邮</span>
+                <span class="promise-item3">100%品质保证</span>
+            </div>
+            <div class="links">
+                <a href="#">跨猪</a>
+                <a href="#">百度</a>
+                <a href="#">淘宝</a>
+            </div>
+            <div class="copyrigh">© 2019 kuazhu.com 豫ICP备15027861号-2</div>
+        </div>
+    </div>
+    <!-- E 底部 -->
+    <!-- S 电梯 -->
+    <div id="elevator" class="elevator container">
+
+        <!-- <a href="javascript:;" class="elevator-item">
+            <span class="elevator-item-num">F1</span>
+            <span class="elevator-item-text text-ellipsis" data-num="0">商品分类</span>
+        </a>
+        <a href="javascript:;" class="backToTop">
+            <span class="elevator-item-num"><i class="iconfont icon-arrow-up"></i></span>
+            <span class="elevator-item-text text-ellipsis" id="backToTop">顶部</span>
+        </a> -->
+    </div>
+    <!-- E 电梯 -->
+</body>
+<script src="js/jquery.(1.12.4).js"></script>
+<script src="js/utils.js"></script>
+<script src="libs/jquery_plugin/jquery.search.js"></script>
+<script src="libs/jquery_plugin/jquery.carousel.js"></script>
+<script src=" js/index.js "></script>
+<!-- <script src="libs/mock/mock.js"></script> -->
+<!-- <script src="mock_data/index.js"></script> -->
+<!-- <script src="libs/carousel/carousel.js"></script> -->
+
+
+</html>
